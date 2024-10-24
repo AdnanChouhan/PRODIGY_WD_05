@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+      
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="weather-forecast-container">
+    <div class="search-bar">
+        <input type="text" id="locationInput" placeholder="Enter city name">
+        <button id="getWeatherBtn"><i class="fas fa-search"></i></button>
+    </div>
+
+    <div id="loadingSpinner" class="loader"></div>
+    <div id="errorMessage" class="hidden">City not found. Please try again.</div>
+
+    <div id="weatherData" class="weather-info hidden">
+        <div class="city-info">
+            <h1 id="city">City Name</h1>
+        </div>
+
+        <div class="weather-details">
+            <img id="weatherIcon" src="icons/default.png" alt="Weather Icon">
+            <p id="description">Weather Description</p>
+            <p id="temperature"></p>
+            <p id="currentDate"></p>
+        </div>
+        
+
+        <div class="extra-details">
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+        </div>
+    
+    </div>    
+</div>  
+    <script src="script.js"></script>
+</body>
+</html>
