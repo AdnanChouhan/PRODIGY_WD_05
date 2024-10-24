@@ -46,7 +46,7 @@ To set up the project locally, follow these steps:
 
 1. Clone the Repository:
 
-    git clone https://github.com/yourusername/weather-app.git      
+    git clone https://github.com/AdnanChouhan/weather-app.git      
     cd weather-app
 
 2. Open index.html: Open the index.html file in your favorite web browser to view the app.
