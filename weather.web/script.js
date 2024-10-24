@@ -38,13 +38,13 @@ updateDate();
 
 
 function getWeather(location) {
-    const apiKey = 'Your-Api-Key';
+    const apiKey = 'YOUR_API_KEY_HERE';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${apiKey}`;
     fetchWeather(url);
 }
 
 function getWeatherByCoords(lat, lon) {
-    const apiKey = 'Your-Api-Key';
+    const apiKey = 'YOUR_API_KEY_HERE';
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
     fetchWeather(url);
 }
